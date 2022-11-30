@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品分类列表</title>
+</head>
+<body>
+<header>
+    <h1>跳蚤市场LOGO</h1>
+    <nav>导航： 首页 注册 登录</nav>
+    <hr>
+</header>
+<article>
+    <select>
+        类别：
+        <option>电子</option>
+        <option>交通</option>
+        <option>生活</option>
+    </select>
+    <section>
+        <ul>
+            <li class="item">
+                <img src="img/01.jpg">
+                <p>Macbook</p>
+                <p>￥6556.00</p>
+            </li>
+            <li class="item">
+                <a href="#"><img src="img/02.jpg"></a>
+                <div class="title"><a href="#">Macbook</a></div>
+                <div class="price">￥6556.00</div>
+            </li>
+            <li class="item">
+                <a href="#"><img src="img/02.jpg"></a>
+                <div class="title"><a href="#">Macbook</a></div>
+                <div class="price">￥6556.00</div>
+            </li>
+            <li class="item">
+                <a href="#"><img src="img/02.jpg"></a>
+                <div class="title"><a href="#">Macbook</a></div>
+                <div class="price">￥6556.00</div>
+            </li>
+            <li class="item">
+                <a href="#"><img src="img/02.jpg"></a>
+                <div class="title"><a href="#">Macbook</a></div>
+                <div class="price">￥6556.00</div>
+            </li>
+            <li class="item">
+                <a href="#"><img src="img/02.jpg"></a>
+                <div class="title"><a href="#">Macbook</a></div>
+                <div class="price">￥6556.00</div>
+            </li>
+            <li class="item">
+                <a href="#"><img src="img/02.jpg"></a>
+                <div class="title"><a href="#">Macbook</a></div>
+                <div class="price">￥6556.00</div>
+            </li>
+            <li class="item">
+                <a href="#"><img src="img/02.jpg"></a>
+                <div class="title"><a href="#">Macbook</a></div>
+                <div class="price">￥6556.00</div>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <a href="#">第一页</a>
+        <a href="#">上一页</a>
+        <a href="#">下一页</a>
+        <a href="#">末页</a>
+    </section>
+</article>
+<footer>
+    <hr>
+    <p>版权所有&copy;uuo00_n-team</p>
+</footer>
+</body>
+</html>
+<script>
+    var item = document.getElementsByClassName("item");
+    for (var i = 0; i < item.length; i++) {
+        item[i].onmouseover = function () {
+            this.style.background = 'rgb(200,200,200)'
+        }
+        item[i].onmouseout = function () {
+            this.style.background = 'rgb(255,255,255)'
+        }
+    }
+</script>

@@ -20,3 +20,12 @@ a:hover {
 a:active {
     color: #0000FF;
 }
+
+ul {
+    list-style-type: circle;
+}
+
+ul li {
+    display: inline-block;
+}
+
