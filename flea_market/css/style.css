@@ -81,3 +81,25 @@ article table {
     background: #f1f5F8;
 }
 
+#pay_order {
+    height: 200px;
+    margin: 10px;
+}
+
+#pay_type {
+    float: left;
+    width: 430px;
+    height: 200px;
+    margin: 10px;
+}
+
+#pay_info {
+    float: left;
+    width: 430px;
+    height: 200px;
+    margin: 10px;
+}
+
+.clear {
+    clear: both;
+}
