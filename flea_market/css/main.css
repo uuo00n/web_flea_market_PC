@@ -136,3 +136,11 @@ link li a:hover {
 link li a:active {
     color: #FCF3F3
 }
+
+copyright p {
+    color: #EEEEEE;
+    font-size: x-small;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
