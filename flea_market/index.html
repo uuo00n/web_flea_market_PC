@@ -2,26 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-<header>
-    <h1>跳蚤市场LOGO</h1>
-    <nav>导航： 首页 注册 登录</nav>
-    <hr>
-</header>
-<article>
-    <h1>商品列表</h1>
-    <section>商品第一部分</section>
-    <section>商品第二部分</section>
-    <section>商品第三部分</section>
-    <section>商品第四部分</section>
-    <section>商品第五部分</section>
-</article>
-<footer>
-    <hr>
-    <p>版权所有&copy;uuo00_n-team</p>
-</footer>
+	<!-- 添加logo -->
+    <div class="logo">
+		<img src="img/logo.png"></div>
+	
+	<!-- 添加搜索表单 -->
+    <form class="searchform">
+        <input type="text" name="search" id="search"/>
+        <input type="submit" value="搜索" id="button"/>
+    </form>
+	<!-- 
+	添加搜索关键字超链接 -->
+	<div class="navigation">
+		<a href="#">手机</a>&nbsp;&nbsp;|&nbsp;
+		<a href="#">电脑</a>&nbsp;&nbsp;|&nbsp;
+		<a href="#">旧书</a>&nbsp;&nbsp;|&nbsp;
+		<a href="#">服装</a>
+	</div>
+	
+	<!-- 添加导航栏 -->
+	<nav>
+		<div class="nav">
+			<img src="img/tag.png"/>
+			<a href="#">商品分类</a>
+		</div>
+		<div class="tag">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">闲置数码</a></li>
+				<li><a href="#">教材书籍</a></li>
+				<li><a href="#">运动装备</a></li>
+				<li><a href="#">鞋服配饰</a></li>
+				<li><a href="#">日用家居</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- 页脚 -->
+	<footer>
+		<div class="navbar">
+			<ul class="link">
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">网站地图</a></li>
+				<li><a href="#">联系客服</a></li>
+				<li><a href="#">版权声明</a></li>
+			</ul>
+			<div class="copyright">
+			<p>Copyr&copy;uuo00n</p>
+			</div>
+		</div>
+	</footer>
+	
 </body>
 </html>
