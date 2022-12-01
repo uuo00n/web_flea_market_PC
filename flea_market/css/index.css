@@ -1,0 +1,132 @@
+/*添加最外层的样式*/
+.tags{
+    width: 1070px;
+    height: 430px;
+    background-color: #FEF9F4;
+    position: relative;
+    left: 100px;
+    top: 0px;
+}
+.link{
+    width: 200px;
+    height: 100%;
+}
+/*添加菜单每一行的整体样式*/
+.link .item{
+    width: 100%;
+    height: 84px;
+    position: relative;
+    top:-60px;
+    float: left;
+    border-bottom: 1px #E6E6E6 solid; 
+}
+/*添加菜单中各元素样式*/
+.link .item h3{
+    height: 25px;
+    padding-left: 25px;
+}
+.link .item h3 a{
+    color: #444241;
+    font-size: 15px;
+}
+.link .item p{
+    height: 18px;
+    padding-left: 18px;
+}
+.link .item p a{
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+    color: #444241;
+}
+/*添加广告大图样式*/
+.index{
+    width: 800px;
+    position: relative;
+    left: 203px;
+    top: -486px; 
+}
+/*添加登录框最外层样式*/
+.user{
+    width:200px;
+    height:100px;
+    background-color:#FEF9F4;
+    position: relative;
+    left:875px;
+    top:-920px;
+}
+/*添加表单样式*/                            /**/
+.account{
+    position: relative;
+    left: 20px;
+    top: 70px;
+    }
+     /*添加文本框样式*/
+.account input{
+    border: none;
+    border-bottom:1px #E6E6E6 solid;
+    background-color: #FEF9F4;
+}
+/*添加登录按钮样式*/
+#login{
+    width:80px;
+    height: 40px;
+    background-color: #DD2727;
+    COlOr: #FFFFFF;
+    font-size: medium;
+    font-family:"times new roman";
+    border: 1px #DD2727 solid;
+}
+ /*注册超链接样式*/
+ .button{
+    width:80px;
+    height: 38px;
+    position: relative;
+    left: 83px;
+    top: -40px;
+    background-color: #DD7D27;
+    border: 1px #DD7D27 solid;
+}
+.button a{
+    COlor: #FFFFFF;
+    position: relative;
+    left:23px;
+    top:10px;
+}
+ /*正文段落布局*/
+ article{
+    width:100%;
+    height:2100px;
+}
+article section{
+    width:1070px;
+    height:450px;
+    position: relative;
+    left:100px;
+    float: left;
+}
+article section h3{
+    font-family:“宋体"times new roman";
+    font-size: medium;
+}
+article section h3 img{
+    position: relative;
+    top:8px;
+}
+
+ /*添加每个商品分类的商品列表整体样式*/
+ .commend{
+    width: 855px;
+    height:390px;
+    position: relative;
+    left:213px;
+    top:-400px;
+ }
+ /*添加商品列表的列表项样式*/
+ .goods{
+    width: 210px;
+    height: 190px;
+    background-color: white;
+    float: left;
+    border: 1px #F5F5F5 solid;
+}
