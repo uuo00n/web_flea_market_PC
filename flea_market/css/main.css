@@ -78,7 +78,7 @@ footer{
 	width: 100%;
 	height: 200px;
 	position: relative;
-	background-color: #3333333;
+	background-color: #333333;
 }
 .link{
 	width: 100%;
@@ -101,4 +101,86 @@ copyright p{
 	position: absolute;
 	left: 50px;
 	top: 50px;
+}
+/*表单外层样式*/
+form{
+	margin-left: 1%;
+	font-size: large;
+	text-align: center;
+	width: 98%;
+	color: #3c3c3c;
+}
+/*文本框元素样式 添加input标签样式*/
+input{
+border:2px #C40000 solid;
+width:200px;
+height:29px;
+margin:20px 0px;
+font-size:medium;}
+/*添加textarea标签样式*/
+textarea{
+resize:none;
+border: 2px #C40000 solid;
+max-width: 80%;
+margin:20px 0px;
+font-size: medium;}
+/*按钮元素样式 */
+.submit{
+width:110px;
+height: 35px;
+background-color: #C40000;
+color: #FFFFFF;
+font-size: medium;
+font-family:"times new roman";
+border:1px #C40000 solid;
+margin:10px;
+position:relative;
+top: 25px;
+}
+/*侧边栏最外层样式 */
+aside{
+	width:15%;
+height: 560px;
+border: 1px solid #C40000;
+background-color: #C40000;
+}
+/*.侧边栏列表元素样式 (1) 去除无序列表黑点。
+(2)设定宽度。
+(3)设定内边距。*/
+aside ul li{
+list-style-type:none;
+width: 100px;
+padding:  15px;
+}
+/*.侧边栏超链接元素样式
+用伪类设置超链接不同状态时颜色不同*/
+aside ul li a:link {color: #FCF3F3}
+aside ul li a:visited {color: #FCF3F3}
+aside ul li a:hover {color: #F10214}
+aside ul li a:active {color: #FCE3F3}
+/*表格每行样式 
+*/
+table tr{
+	height: 40px;
+}
+/*表头样式添加<input>标签*/
+tr th{
+	background-color: #FFF2E8;
+	font-family: "微软雅黑";
+	font-size: 15px;
+}
+/*文本框样式*/
+tr td{
+	width: 15%;
+	font-family: "宋体";
+	font-size: 15px;
+}
+/*按钮样式*/
+table td a{
+	padding: 2px 5px;
+	text-decoration: none;
+	font-family: "微软雅黑";
+	background-color: #C40000;
+	border-radius: 2px;
+	font-style: normal;
 }
