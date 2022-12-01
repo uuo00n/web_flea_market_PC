@@ -35,7 +35,7 @@ a{
 	font-family: "times new roman";
 	border: 3px #C40000 solid;
 }
-.navigation{
+navigation{
 	width: 550px;
 	position: relative;
 	left: 380px;
@@ -95,7 +95,7 @@ link li a:link{color: #FCF3F3;}
 link li a:visited{color: #FCF3F3;}
 link li a:hover{color: #FCF3F3;}
 link li a:active{color: #FCF3F3;}
-.copyright p{
+copyright p{
 	color: #EEEEEE;
 	font-size: x-small;
 	position: absolute;
