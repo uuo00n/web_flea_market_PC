@@ -36,65 +36,75 @@
         </div>
     </nav>
 </header>
-    <hr>
-    <nav>
-        <h4>系统管理</h4>
-        <ul>
-            <li><a href="usermanager.html">用户管理</a></li>
-            <li><a href="#">商品审核</a></li>
-            <li><a href="tagmanage.html">分类管理</a></li>
-            <li><a href="#">配置管理</a></li>
-        </ul>
-    </nav>
-    
-    <article>
-        <h3>商品管理</h3>
-        <div>
-            <form action="#" method="post">
-                <input type="text" name="search">
-                <input type="submit" value="搜索">
-            </form>
+<hr>
+<nav>
+    <h4>系统管理</h4>
+    <ul>
+        <li><a href="usermanager.html">用户管理</a></li>
+        <li><a href="#">商品审核</a></li>
+        <li><a href="tagmanage.html">分类管理</a></li>
+        <li><a href="#">配置管理</a></li>
+    </ul>
+</nav>
+
+<article>
+    <h3>商品管理</h3>
+    <div>
+        <form action="#" method="post">
+            <input type="text" name="search">
+            <input type="submit" value="搜索">
+        </form>
+    </div>
+</article>
+<article>
+    <table>
+        <tr>
+            <th><input type="checkbox">全选</th>
+            <th>商品编号</th>
+            <th>商品名</th>
+            <th>价格</th>
+            <th>发布时间</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="checkbox"></td>
+            <td>1000</td>
+            <td>iPad</td>
+            <td>￥2208</td>
+            <td>2019-1-22 10:10:10</td>
+            <td>
+                <a href="#">通过</a>
+                <a href="#">禁用</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="submit" value="批量通过">
+            </td>
+            <td colspan="2">
+                <a href="#">首页</a>&nbsp;
+                <a href="#">上一页</a>&nbsp;
+                <a href="#">下一页</a>&nbsp;
+                <a href="#">末页</a>
+            </td>
+        </tr>
+    </table>
+</article>
+<hr>
+<footer>
+    <div class="navbar">
+        <div class="link">
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">联系客服</a></li>
+                <li><a href="#">版权声明</a></li>
+            </ul>
         </div>
-    </article>
-    <article>
-        <table>
-            <tr>
-                <th><input type="checkbox">全选</th>
-                <th>商品编号</th>
-                <th>商品名</th>
-                <th>价格</th>
-                <th>发布时间</th>
-                <th>操作</th>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="checkbox"></td>
-                <td>1000</td>
-                <td>iPad</td>
-                <td>￥2208</td>
-                <td>2019-1-22 10:10:10</td>
-                <td>
-                    <a href="#">通过</a>
-                    <a href="#">禁用</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <input type="submit" value="批量通过">
-                </td>
-                <td colspan="2">
-                    <a href="#">首页</a>&nbsp;
-                    <a href="#">上一页</a>&nbsp;
-                    <a href="#">下一页</a>&nbsp;
-                    <a href="#">末页</a>
-                </td>
-            </tr>
-        </table>
-    </article>
-    <hr>
-    <footer>
-        <hr>
-        <p>版权所有&copy;uuo00_n-team</p>
-    </footer>
-    
+        <div class="copyright">
+            <p>版权所有&copy;uuo00_n-team</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
