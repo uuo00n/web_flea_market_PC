@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/main_2.css">
+    <link rel="stylesheet" type="text/css" href="css/style_2.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo"><img src="img/logo.png"/></div>
+    <form class="searchform">
+        <input type="text" name="search" id="search">
+        <input type="submit" value="搜索" id="button">
+    </form>
+    <div class="navigation">
+        <a href="#">手机</a>&nbsp;&nbsp;|&nbsp;
+        <a href="#">电脑</a>&nbsp;&nbsp;|&nbsp;
+        <a href="#">旧书</a>&nbsp;&nbsp;|&nbsp;
+        <a href="#">服装</a>
+    </div>
+    <nav>
+        <div class="nav">
+            <img src="img/tag.png"/>
+            <a href="#">商品分类</a>
+        </div>
+        <div class="tag">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">闲置数码</a></li>
+                <li><a href="#">教材书籍</a></li>
+                <li><a href="#">运动装备</a></li>
+                <li><a href="#">鞋服配饰</a></li>
+                <li><a href="#">日用家居</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<aside>
+    <section>
+        <ul>
+            <li><a href="edit_pwd.html">修改密码</a></li>
+            <li><a href="edit_contact.html">修改联系方式</a></li>
+            <li><a href="my_orders.html">我的订单</a></li>
+            <li><a href="my_product.html">我的商品</a></li>
+            <li><a href="purchase_history.html">消费记录</a></li>
+            <li><a href="#">收件箱</a></li>
+        </ul>
+        <h2>收件箱</h2>
+        <section>
+            <table>
+                <tr>
+                    <th>选中</th>
+                    <th>主题</th>
+                    <th>时间</th>
+                    <th>发件人</th>
+                    <th>状态</th>
+                    <th>详情</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="choose"></td>
+                    <td><a href="message.html">关于购买iPad购买时间</a></td>
+                    <td>1小时前</td>
+                    <td>张三</td>
+                    <td>未读</td>
+                    <td><a href="">详情</a></td>
+                </tr>
+                <tr>
+                    <td colspan="6" align="right">
+                        <a href="#">第一页</a>
+                        <a href="#">上一页</a>
+                        <a href="#">下一页</a>
+                        <a href="#">末页</a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <input type="button" value="全选" onclick="SelectAll()">
+        <input type="button" value="设为已读">
+        <input type="submit" value="删除">
+    </section>
+</aside>
+<footer>
+    <div class="navbar">
+        <div class="link">
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">联系客服</a></li>
+                <li><a href="#">版权声明</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>版权所有&copy;uuo00_n-team</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
