@@ -72,18 +72,4 @@ uuo00_n@outlook.com
 
 （4）配置管理：系统管理员可以对页头、页脚、日志等参数进行配置管理。
 
-## 作者
-项目开发人员
 
-uuo00_n(Huang Jumbo)
-
-pig40(Lang Jianwei)
-
-qishui233(Feng Yufan)
-
-23cc_kaile(Chen Kaile)
-
-详细请联系
-E-mail:
-
-uuo00_n@outlook.com
