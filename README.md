@@ -2,6 +2,22 @@
 
 系统主要包括首页、注册、登录、用户中心、订单管理、商品管理、留言管理、系统管理等模块，各模块的详细功能如下。
 
+## 作者
+项目开发人员
+
+[uuo00_n](https://github.com/uuo00n)(Huang Jumbo)
+
+[pig40](https://github.com/pig40)(Lang Jianwei)
+
+[qishui233](https://github.com/qishui233)(Feng Yufan)
+
+[23cc_kaile](https://github.com/23cckail)(Chen Kaile)
+
+详细请联系
+E-mail:
+
+uuo00_n@outlook.com
+
 ## 首页
 
 在用户进入主页时会看到分类和商品列表。
