@@ -6,6 +6,31 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <style>
+        article {
+            margin-left: 400px;
+            margin-top: -500px;
+        }
+
+        footer {
+            width: 100%;
+            height: 50px;
+            position: relative;
+            background-color: #cccccc;
+            margin-top: 55px;
+            top: 50px;
+        }
+
+        article input {
+            margin: 10px 0px;
+        }
+
+        footer .link div {
+            float: right;
+            margin-top: 20px;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -15,12 +40,14 @@
         <input type="submit" value="搜索" id="button">
     </form>
     <div class="navigation">
-        <a href="#">手机</a>&nbsp;&nbsp;|&nbsp;
-        <a href="#">电脑</a>&nbsp;&nbsp;|&nbsp;
-        <a href="#">旧书</a>&nbsp;&nbsp;|&nbsp;
-        <a href="#">服装</a>
+        <form class="navigation"><br>
+            <a href="#">手机</a>&nbsp;&nbsp;|&nbsp;
+            <a href="#">电脑</a>&nbsp;&nbsp;|&nbsp;
+            <a href="#">旧书</a>&nbsp;&nbsp;|&nbsp;
+            <a href="#">服装</a>
+        </form>
     </div>
-    <nav>
+    <nav class="op">
         <div class="nav">
             <img src="img/tag.png"/>
             <a href="#">商品分类</a>
@@ -37,23 +64,22 @@
         </div>
     </nav>
 </header>
-<nav>
-    <h4>系统管理</h4>
-    <ul>
-        <li><a href="usermanager.html">用户管理</a></li>
-        <li><a href="goodsmanage.html">商品审核</a></li>
-        <li><a href="tagmanage.html">分类管理</a></li>
-        <li><a href="config_manage.html">配置管理</a></li>
-    </ul>
-</nav>
+<aside>
+    <nav>
+        <ul>
+            <li><a href="usermanager.html">用户管理</a></li>
+            <li><a href="goodsmanage.html">商品审核</a></li>
+            <li><a href="tagmanage.html">分类管理</a></li>
+            <li><a href="config_manage.html">配置管理</a></li>
+        </ul>
+    </nav>
+</aside>
 <article>
     <h2>分类管理</h2>
     <div><a href="tagadd.html">新增分类</a></div>
-</article>
-<article>
     <table>
         <tr>
-            <th><input type="checkbox">全选</th>
+            <th>全选</th>
             <th>序号</th>
             <th>名称</th>
             <th>描述</th>
@@ -61,24 +87,24 @@
         </tr>
         <tr>
             <td><input type="checkbox" name="checkbox"></td>
-            <td>1</td>
-            <td>衣服</td>
-            <td>衣服</td>
-            <td><a href="#">修改</a></td>
+            <td align="center">1</td>
+            <td align="center">衣服</td>
+            <td align="center">衣服</td>
+            <td align="center"><a href="#">修改</a></td>
         </tr>
         <tr>
             <td><input type="checkbox" name="checkbox"></td>
-            <td>2</td>
-            <td>数码</td>
-            <td>数码用品</td>
-            <td><a href="#">修改</a></td>
+            <td align="center">2</td>
+            <td align="center">数码</td>
+            <td align="center">数码用品</td>
+            <td align="center"><a href="#">修改</a></td>
         </tr>
         <tr>
             <td><input type="checkbox" name="checkbox"></td>
-            <td>3</td>
-            <td>游戏</td>
-            <td>游戏影音</td>
-            <td><a href="#">修改</a></td>
+            <td align="center">3</td>
+            <td align="center">游戏</td>
+            <td align="center">游戏影音</td>
+            <td align="center"><a href="#">修改</a></td>
         </tr>
         <tr>
             <td colspan="4">
