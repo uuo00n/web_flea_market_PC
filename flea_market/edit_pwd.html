@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>edit_pwd</title>
+    <title>修改密码</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/jquery-ui.min.js"></script>
@@ -30,6 +30,24 @@
             margin-top: 20px;
             color: #fff;
         }
+
+        .pwd_xg{
+            border: 3px solid #c40000;
+            background-color: #e6e6e6;
+            height: 560px;
+        }
+
+        .pwd_ys{
+            position: relative;
+            border: 2px dashed #c40000;
+            left: 15%;
+            top: -564px;
+        }
+        .password{
+            position: relative;
+            left: -100px;
+            top: -50px;
+        }
     </style>
 </head>
 <body>
@@ -47,7 +65,7 @@
             <a href="#">服装</a>
         </form>
     </div>
-    <nav class="op">
+    <!-- <nav class="op">
         <div class="nav">
             <img src="img/tag.png"/>
             <a href="#">商品分类</a>
@@ -62,26 +80,46 @@
                 <li><a href="#">日用家居</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 </header>
-<aside>
-    <ul>
-        <li><a href="edit_pwd.html">修改密码</a></li>
-        <li><a href="edit_contact.html">修改联系方式</a></li>
-        <li><a href="my_orders.html">我的订单</a></li>
-        <li><a href="my_product.html">我的商品</a></li>
-        <li><a href="purchase_history.html">消费记录</a></li>
-    </ul>
-</aside>
-<article>
-    <form action="#" method="post">
-        原始密码：<input name="pwd" type="password"/><br/>
-        新密码：<input name="pwd" type="password"/><br/>
-        确认新密码：<input name="pwd" type="password"/><br/>
-        <input type="submit" value="修改"/>
-        <input type="reset" value="取消"/>
-    </form>
-</article>
+<div class="pwd_xg">
+    <aside>
+            <ul>
+                <li><a href="edit_pwd.html">修改密码</a></li>
+                <li><a href="edit_contact.html">修改联系方式</a></li>
+                <li><a href="my_orders.html">我的订单</a></li>
+                <li><a href="my_product.html">我的商品</a></li>
+                <li><a href="purchase_history.html">消费记录</a></li>
+            </ul>
+    </aside>
+    <div class="pwd_ys">
+        修改密码
+    </div>
+    <article>
+        <form action="#" method="post">
+        <div class="password">
+            <table>
+                <tr>
+                    <td>原始密码：</td>
+                    <td><input name="pwd" type="password"/></td>
+                </tr>
+                <tr>
+                    <td>新密码：</td>
+                    <td><input name="pwd" type="password"/></td>
+                </tr>
+                <tr>
+                    <td>确认新密码：</td>
+                    <td><input name="pwd" type="password"/></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="修改"/></td>
+                    <td><input type="reset" value="取消"/></td>
+                </tr>
+            </table>
+        </div>
+        </form>
+    </article>
+</div>
 <footer>
     <div class="navbar">
         <div class="link">
@@ -90,10 +128,8 @@
                 <li><a href="#">网站地图</a></li>
                 <li><a href="#">联系客服</a></li>
                 <li><a href="#">版权声明</a></li>
+                <a class="copyright">版权所有&copy;uuo00_n-team</a>
             </ul>
-        </div>
-        <div class="copyright">
-            <p>版权所有&copy;uuo00_n-team</p>
         </div>
     </div>
 </footer>

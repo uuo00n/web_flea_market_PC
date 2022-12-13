@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>login</title>
+    <title>登录</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/jquery-ui.min.js"></script>
@@ -30,6 +30,24 @@
             margin-top: 20px;
             color: #fff;
         }
+        .dlbk{
+            margin: 0 auto;
+            width: 700px;
+            border:1px solid #000;
+        }
+        .bg{
+            position: relative;
+            left: -150px;
+            top: -50px;
+        }
+        .bg .table_dl{
+            position: relative;
+            left: -90px;
+        }
+        #toubu{
+            position: relative;
+            left: -60px;
+        }
     </style>
 </head>
 <body>
@@ -47,7 +65,7 @@
             <a href="#">服装</a>
         </form>
     </div>
-    <nav class="op">
+    <!-- <nav class="op">
         <div class="nav">
             <img src="img/tag.png"/>
             <a href="#">商品分类</a>
@@ -62,20 +80,32 @@
                 <li><a href="#">日用家居</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 </header>
-<article>
-    <h2>登录</h2>
-</article>
-<article>
-    <form action="index.html" method="get">
-        账号：<input name="account" required="required" type="text"/><br>
-        密码：<input name="pwd" type="password"/><br>
-        <input type="submit" value="登录"/>
-        <input type="reset" value="取消"/>
-    </form>
-</article>
-<footer>
+<div>
+    <div class="dlbk">
+        <article id="toubu">
+            <h2>登录</h2>
+        </article>
+        <article class="bg">
+            <form action="index.html" method="get">
+                <table>
+                    <tr>
+                        <td>账号:<input name="account" required="required" type="text"/></td>
+                    </tr>
+                    <tr>
+                        <td>密码:<input name="pwd" type="password"/></td>
+                    </tr>
+                    <tr class="table_dl">
+                        <td><input type="submit" value="登录"/></td>
+                        <td><input type="reset" value="取消"/></td>
+                    </tr>
+                </table>
+            </form>
+        </article>
+    </div>
+</div>
+<footer class="awa">
     <div class="navbar">
         <div class="link">
             <ul>
@@ -83,10 +113,8 @@
                 <li><a href="#">网站地图</a></li>
                 <li><a href="#">联系客服</a></li>
                 <li><a href="#">版权声明</a></li>
+                <a class="copyright">版权所有&copy;uuo00_n-team</a>
             </ul>
-        </div>
-        <div class="copyright">
-            <p>版权所有&copy;uuo00_n-team</p>
         </div>
     </div>
 </footer>
