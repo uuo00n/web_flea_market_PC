@@ -1,8 +1,14 @@
 body {
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
     box-sizing: border-box;
+}
+
+.logo img{
+    position: relative;
+    top: -10px; 
 }
 
 a {
@@ -10,7 +16,7 @@ a {
 }
 
 img {
-    width: 250px;
+    width: 280px;
     height: 100px;
 }
 
@@ -20,6 +26,8 @@ img {
 }
 
 .op {
+    position: relative;
+    top: -40px;
     height: 70px;
     background-color: rgb(75, 39, 39);
 }
@@ -28,7 +36,7 @@ img {
     width: 300px;
     position: relative;
     left: 100px;
-    top: 30px;
+    top: 40px;
     margin-left: 150px;
 }
 
@@ -36,7 +44,7 @@ img {
     width: 550px;
     position: relative;
     left: 380px;
-    top: -25px;
+    top: -75px;
     margin-left: 200px;
 }
 
@@ -60,12 +68,16 @@ img {
 }
 
 .navigation {
-    width: 500px;
+    width: 550px;
     position: relative;
-    left: 380px;
-    top: -20px;
+    left: 385px;
+    top: -50px;
     color: #e6e6e6;
     margin-left: -90px;
+}
+
+.navigation a{
+    font-size: 20px;
 }
 
 .navigation a:link {
@@ -86,18 +98,19 @@ img {
 
 .nav {
     background-color: #C40000;
-    width: 200px;
+    width: 300px;
     font-size: medium;
     font-family: "times new roman";
     position: relative;
-    left: 100px;
+    left: -180px;
     border: 2px #C40000 solid;
     margin-left: 180px;
 }
 
 .nav a {
     position: relative;
-    top: -10px;
+    font-size: 25px;
+    top: -18px;
 }
 
 .tag ul, .tag ul li {
@@ -107,16 +120,20 @@ img {
 }
 
 .tag ul li {
-    width: 100px;
+    width: 200px;
     float: left;
 }
 
+.tag ul li a{
+    font-size: 25px;
+}
+
 .tag {
-    width: 900px;
+    width: 1500px;
     height: 100%;
     position: relative;
-    left: 460px;
-    top: -48px;
+    left: 280px;
+    top: -65px;
     z-index: 1;
 }
 
@@ -156,16 +173,12 @@ link li a:active {
     color: #f3f3f3;
 }
 
-.navbar p {
-    color: #fefefe;
+.navbar .link .copyright {
+    color: #d400ff;
     font-size: x-small;
-    position: absolute;
-    left: 50px;
-    top: 50px;
-    margin-left: 200px;
-}
-
-.navbar {
+    position: relative;
+    left: 350px;
+    top: 30px;
     margin-left: 200px;
 }
 
