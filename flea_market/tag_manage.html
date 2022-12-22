@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <style>
         article {
-            margin-left: 400px;
+            margin-left: 550px;
             margin-top: -550px;
         }
 
@@ -28,11 +28,15 @@
             margin-top: 20px;
             color: #fff;
         }
+
+        .navbar {
+            margin-top: 180px;
+        }
     </style>
 </head>
 <body>
 <header>
-    <div class="logo"><img src="img/logo.png" alt=""></div>
+    <div class="logo"><a href="index.html"><img src="img/logo.png"/></a></div>
     <form class="searchform">
         <input type="text" name="search" id="search">
         <input type="submit" value="搜索" id="button">
@@ -46,42 +50,19 @@
             <a href="#">服装</a>
         </form>
     </div>
-    <nav class="op">
-        <div class="nav">
-            <img src="img/MENU.png" alt="">
-            <a href="#">商品分类</a>
-        </div>
-        <div class="tag">
-            <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">闲置数码</a></li>
-                <li><a href="#">教材书籍</a></li>
-                <li><a href="#">运动装备</a></li>
-                <li><a href="#">鞋服配饰</a></li>
-                <li><a href="#">日用家具</a></li>
-            </ul>
-        </div>
-    </nav>
+    <nav class="op"></nav>
 </header>
 <aside>
-    <ul>
-        <li><a href="edit_pwd.html">修改密码</a></li>
-        <li><a href="edit_contact.html">修改联系方式</a></li>
-        <li><a href="my_orders.html">我的订单</a></li>
-        <li><a href="my_product.html">我的商品</a></li>
-        <li><a href="putchase_history.html">消费记录</a></li>
-    </ul>
-</aside>
-<article>
     <nav>
-        <h4>系统管理</h4>
         <ul>
             <li><a href="usermanager.html">用户管理</a></li>
             <li><a href="goodsmanage.html">商品审核</a></li>
             <li><a href="tag_manage.html">分类管理</a></li>
-            <li><a href="config.html">配置管理</a></li>
+            <li><a href="config_manage.html">配置管理</a></li>
         </ul>
     </nav>
+</aside>
+<article>
     <h3>分类管理</h3>
     <div><a href="tagadd.html">新增分类</a></div>
     <table>
@@ -146,10 +127,8 @@
                 <li><a href="#">网站地图</a></li>
                 <li><a href="#">联系客服</a></li>
                 <li><a href="#">版权声明</a></li>
+                <a class="copyright">版权所有&copy;uuo00_n-team</a>
             </ul>
-        </div>
-        <div class="copyright">
-            <div id="copyright">版权所有&copy;uuo00_n-team</div>
         </div>
     </div>
 </footer>

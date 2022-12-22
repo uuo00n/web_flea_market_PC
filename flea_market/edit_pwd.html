@@ -18,7 +18,7 @@
             position: relative;
             background-color: #cccccc;
             margin-top: 55px;
-            top: 100px;
+            top: -55px;
         }
 
         article input {
@@ -31,19 +31,14 @@
             color: #fff;
         }
 
-        .pwd_xg{
-            border: 3px solid #c40000;
-            background-color: #e6e6e6;
-            height: 560px;
-        }
-
-        .pwd_ys{
+        .pwd_ys {
             position: relative;
             border: 2px dashed #c40000;
             left: 15%;
             top: -564px;
         }
-        .password{
+
+        .password {
             position: relative;
             left: -100px;
             top: -50px;
@@ -52,7 +47,7 @@
 </head>
 <body>
 <header>
-    <div class="logo"><img src="img/logo.png"/></div>
+    <div class="logo"><a href="index.html"><img src="img/logo.png"/></a></div>
     <form class="searchform">
         <input type="text" name="search" id="search">
         <input type="submit" value="搜索" id="button">
@@ -65,58 +60,49 @@
             <a href="#">服装</a>
         </form>
     </div>
-    <!-- <nav class="op">
-        <div class="nav">
-            <img src="img/tag.png"/>
-            <a href="#">商品分类</a>
-        </div>
-        <div class="tag">
-            <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">闲置数码</a></li>
-                <li><a href="#">教材书籍</a></li>
-                <li><a href="#">运动装备</a></li>
-                <li><a href="#">鞋服配饰</a></li>
-                <li><a href="#">日用家居</a></li>
-            </ul>
-        </div>
-    </nav> -->
+    <nav class="op"></nav>
 </header>
-<div class="pwd_xg">
+<div class="splb">
     <aside>
-            <ul>
-                <li><a href="edit_pwd.html">修改密码</a></li>
-                <li><a href="edit_contact.html">修改联系方式</a></li>
-                <li><a href="my_orders.html">我的订单</a></li>
-                <li><a href="my_product.html">我的商品</a></li>
-                <li><a href="purchase_history.html">消费记录</a></li>
-            </ul>
+        <ul>
+            <li><a href="edit_pwd.html">修改密码</a></li>
+            <li><a href="edit_contact.html">修改联系方式</a></li>
+            <li><a href="my_orders.html">我的订单</a></li>
+            <li><a href="my_product.html">我的商品</a></li>
+            <li><a href="purchase_history.html">消费记录</a></li>
+            <li><a href="add_product.html">发布商品</a></li>
+            <li><a href="edit_product.html">修改商品</a></li>
+            <li><a href="delete_product.html">删除商品</a></li>
+            <li><a href="massage_list.html">收件箱</a></li>
+            <li><a href="add_msg.html">发送留言</a></li>
+            <li><a href="order_list.html">查询订单</a></li>
+        </ul>
     </aside>
     <div class="pwd_ys">
         修改密码
     </div>
     <article>
         <form action="#" method="post">
-        <div class="password">
-            <table>
-                <tr>
-                    <td>原始密码：</td>
-                    <td><input name="pwd" type="password"/></td>
-                </tr>
-                <tr>
-                    <td>新密码：</td>
-                    <td><input name="pwd" type="password"/></td>
-                </tr>
-                <tr>
-                    <td>确认新密码：</td>
-                    <td><input name="pwd" type="password"/></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" value="修改"/></td>
-                    <td><input type="reset" value="取消"/></td>
-                </tr>
-            </table>
-        </div>
+            <div class="password">
+                <table>
+                    <tr>
+                        <td>原始密码：</td>
+                        <td><input name="pwd" type="password"/></td>
+                    </tr>
+                    <tr>
+                        <td>新密码：</td>
+                        <td><input name="pwd" type="password"/></td>
+                    </tr>
+                    <tr>
+                        <td>确认新密码：</td>
+                        <td><input name="pwd" type="password"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="修改"/></td>
+                        <td><input type="reset" value="取消"/></td>
+                    </tr>
+                </table>
+            </div>
         </form>
     </article>
 </div>

@@ -7,9 +7,12 @@
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <style>
-        article {
-            margin-left: 300px;
-            margin-top: -400px;
+        #dd {
+            margin: 0 auto;
+            width: 850px;
+            height: 550px;
+            margin-top: -615px;
+            margin-left: 400px;
         }
 
         footer {
@@ -18,7 +21,12 @@
             position: relative;
             background-color: #cccccc;
             margin-top: 55px;
-            top: 0px;
+            top: -55px;
+        }
+
+        article img {
+            width: 180px;
+            height: 200px;
         }
 
         article input {
@@ -34,7 +42,7 @@
 </head>
 <body>
 <header>
-    <div class="logo"><img src="img/logo.png"/></div>
+    <div class="logo"><a href="index.html"><img src="img/logo.png"/></a></div>
     <form class="searchform">
         <input type="text" name="search" id="search">
         <input type="submit" value="搜索" id="button">
@@ -47,76 +55,74 @@
             <a href="#">服装</a>
         </form>
     </div>
-    <nav class="op">
-        <div class="nav">
-            <img src="img/tag.png"/>
-            <a href="#">商品分类</a>
-        </div>
-        <div class="tag">
-            <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">闲置数码</a></li>
-                <li><a href="#">教材书籍</a></li>
-                <li><a href="#">运动装备</a></li>
-                <li><a href="#">鞋服配饰</a></li>
-                <li><a href="#">日用家居</a></li>
-            </ul>
-        </div>
-    </nav>
 </header>
-<aside>
-    <ul>
-        <li><a href="edit_pwd.html">修改密码</a></li>
-        <li><a href="edit_contact.html">修改联系方式</a></li>
-        <li><a href="my_orders.html">我的订单</a></li>
-        <li><a href="my_product.html">我的商品</a></li>
-        <li><a href="purchase_history.html">消费记录</a></li>
-    </ul>
-</aside>
-<article>
-    <table>
-        <tr class="table_head">
-            <th>订单号</th>
-            <th>商品信息</th>
-            <th>实付款</th>
-            <th>时间</th>
-            <th>状态</th>
-            <th>操作</th>
-        </tr>
-        <tr>
-            <td>12525355961</td>
-            <td><img src="img/product1.jpg"><br>山地自行车</td>
-            <td>$440.45</td>
-            <td>
-                2019-04-31 09:22:01
-            </td>
-            <td>取消</td>
-            <td>
-                <a href="">订单详情</a>
-            </td>
-        </tr>
-        <tr>
-            <td>12525355961</td>
-            <td><img src="img/ipad.jpg"><br>iPad</td>
-            <td>$1300</td>
-            <td>
-                2019-04-31 01:52:39
-            </td>
-            <td>交易成功</td>
-            <td>
-                <a href="">订单详情</a>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="6" align="right">
-                <a href="#">第一页</a>
-                <a href="#">上一页</a>
-                <a href="#">下一页</a>
-                <a href="#">末页</a>
-            </td>
-        </tr>
-    </table>
-</article>
+<nav class="op"></nav>
+<div class="splb">
+    <aside>
+        <ul>
+            <li><a href="edit_pwd.html">修改密码</a></li>
+            <li><a href="edit_contact.html">修改联系方式</a></li>
+            <li><a href="my_orders.html">我的订单</a></li>
+            <li><a href="my_product.html">我的商品</a></li>
+            <li><a href="purchase_history.html">消费记录</a></li>
+            <li><a href="add_product.html">发布商品</a></li>
+            <li><a href="edit_product.html">修改商品</a></li>
+            <li><a href="delete_product.html">删除商品</a></li>
+            <li><a href="massage_list.html">收件箱</a></li>
+            <li><a href="add_msg.html">发送留言</a></li>
+            <li><a href="order_list.html">查询订单</a></li>
+        </ul>
+    </aside>
+    <div id="dd">
+        <article>
+            <nav class="neirong">
+                <h1 align="center">订单列表</h1>
+            </nav>
+            <table border="1">
+                <tr class="table_head">
+                    <th>订单号</th>
+                    <th>商品信息</th>
+                    <th>实付款</th>
+                    <th>时间</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>12525355961</td>
+                    <td><img src="img/product1.jpg"><br>山地自行车</td>
+                    <td>$440.45</td>
+                    <td>
+                        2019-04-31 09:22:01
+                    </td>
+                    <td>取消</td>
+                    <td>
+                        <a href="">订单详情</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12525355961</td>
+                    <td><img src="img/ipad.jpg"><br>iPad</td>
+                    <td>$1300</td>
+                    <td>
+                        2019-04-31 01:52:39
+                    </td>
+                    <td>交易成功</td>
+                    <td>
+                        <a href="order_details.html">订单详情</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" align="right">
+                        <a href="#">第一页</a>
+                        <a href="#">上一页</a>
+                        <a href="#">下一页</a>
+                        <a href="#">末页</a>
+                    </td>
+                </tr>
+            </table>
+        </article>
+    </div>
+</div>
 <footer>
     <div class="navbar">
         <div class="link">
@@ -125,10 +131,8 @@
                 <li><a href="#">网站地图</a></li>
                 <li><a href="#">联系客服</a></li>
                 <li><a href="#">版权声明</a></li>
+                <a class="copyright">版权所有&copy;uuo00_n-team</a>
             </ul>
-        </div>
-        <div class="copyright">
-            <p>版权所有&copy;uuo00_n-team</p>
         </div>
     </div>
 </footer>

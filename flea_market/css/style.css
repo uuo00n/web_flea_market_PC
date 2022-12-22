@@ -24,14 +24,12 @@ body {
     float: left;
     width: 45%;
     height: 200px;
-    /* margin: 10px; */
 }
 
 #pay_info {
     float: right;
     width: 45%;
     height: 200px;
-    /* margin: 10px; */
 }
 
 .clear {

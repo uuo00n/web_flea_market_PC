@@ -3,13 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>搜索商品</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
 <header>
-    <form>
-        <input name="search">
-        <input type="button" value="搜索">
+    <div class="logo"><a href="index.html"><img src="img/logo.png"/></a></div>
+    <form class="searchform">
+        <input type="text" name="search" id="search">
+        <input type="submit" value="搜索" id="button">
     </form>
+    <div class="navigation">
+        <form class="navigation"><br>
+            <a href="#">手机</a>&nbsp;&nbsp;|&nbsp;
+            <a href="#">电脑</a>&nbsp;&nbsp;|&nbsp;
+            <a href="#">旧书</a>&nbsp;&nbsp;|&nbsp;
+            <a href="#">服装</a>
+        </form>
+    </div>
 </header>
+<a href="product_detail.html">关键字搜索:</a>
+<footer>
+    <div class="navbar">
+        <div class="link">
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">联系客服</a></li>
+                <li><a href="#">版权声明</a></li>
+                <a class="copyright">版权所有&copy;uuo00_n-team</a>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

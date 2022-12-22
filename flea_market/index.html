@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
     <script src="jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <style>
         article {
             margin-left: 400px;
@@ -34,14 +35,14 @@
             width: 800px;
             position: relative;
             left: -30px;
-            top: -30px;
+            top: -20px;
         }
 
         .index img {
-            margin-left: 450px;
-            margin-top: -550px;
-            width: 550px;
-            height: 450px;
+            margin-left: 440px;
+            margin-top: -580px;
+            width: 620px;
+            height: 460px;
         }
 
         hr {
@@ -49,27 +50,38 @@
             width: 300px;
         }
 
-        .tags {
-            width: 1070px;
-            height: 700px;
-            background-color: #fef9f4;
+        .fenlei {
+            left: 50px;
             position: relative;
-            left: 100px;
-            top: 0;
+        }
+
+        .link {
+            position: relative;
+            top: 100px
         }
 
         .user {
             width: 200px;
             height: 100%;
             position: relative;
-            left: 1100px;
-            top: -520px;
+            left: 1050px;
+            top: -200px;
         }
+
+        .tags {
+            width: 1370px;
+            height: 700px;
+            background-color: #fef9f4;
+            position: relative;
+            left: 100px;
+            top: 0px;
+        }
+
 
         .user form {
             width: 200px;
             height: 200px;
-            background-color: #fef9f4;
+            /* background-color: #fef9f4; */
         }
 
         .user form input {
@@ -79,7 +91,7 @@
 
         .account {
             position: relative;
-            left: 20px;
+            left: 30px;
             top: 70px;
         }
 
@@ -117,6 +129,12 @@
             margin-right: 39.9px;
         }
 
+        .sy {
+            width: 1370px;
+            height: 460px;
+            background-color: #fef9f4;
+        }
+
         .tit {
             vertical-align: middle;
             width: 30px;
@@ -124,25 +142,34 @@
         }
 
         .navss {
-            width: 800px;
-            background-color: blue;
+            position: relative;
+            left: 20px;
+            top: 10px;
+            width: 370px;
+            /* background-color: blue; */
         }
+
+        .picture img {
+            position: relative;
+            left: 20px;
+        }
+
 
         .op {
             width: 1800px;
         }
 
         .link {
-            width: 200px;
+            width: 220px;
             height: 50%;
         }
 
-        .link .item h3 {
+        .link .item h2 {
             height: 25px;
             padding-left: 25px;
         }
 
-        .link .item h3 a {
+        .link .item h2 a {
             color: #444241;
         }
 
@@ -154,43 +181,44 @@
         .link .item p a {
             font-style: 12px;
             position: relative;
+
             top: -10px;
             color: #444241;
         }
 
         .goods:first-child {
             position: relative;
-            left: 220px;
+            left: 350px;
             top: -400px;
         }
 
         .goods:nth-child(2) {
             position: relative;
-            left: 220px;
+            left: 350px;
             top: -400px;
         }
 
         .goods:nth-child(3) {
             position: relative;
-            left: 400px;
+            left: 700px;
             top: -810px;
         }
 
         .goods:nth-child(4) {
             position: relative;
-            left: 400px;
+            left: 700px;
             top: -810px;
         }
 
         .goods:nth-child(5) {
             position: relative;
-            left: 590px;
+            left: 1000px;
             top: -1220px;
         }
 
         .goods:nth-child(6) {
             position: relative;
-            left: 590px;
+            left: 1000px;
             top: -1220px;
         }
 
@@ -218,101 +246,117 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<div class="logo"><img src="img/logo.png" alt=""></div>
-<form class="searchform">
-    <input type="text" name="search" id="search">
-    <input type="submit" value="搜索" id="button">
-</form>
-<div class="navigation">
-    <form class="navigation">
-        <br>
-        <a href="#">手机</a>&nbsp;&nbsp;|&nbsp;
-        <a href="#">电脑</a>&nbsp;&nbsp;|&nbsp;
-        <a href="#">旧书</a>&nbsp;&nbsp;|&nbsp;
-        <a href="#">服装</a>
+<header>
+    <div class="logo"><a href="index.html"><img src="img/logo.png"/></a></div>
+    <form class="searchform" action="product_search.html">
+        <input type="text" name="search" id="search">
+        <input type="submit" value="搜索" id="button">
     </form>
-</div>
-<nav class="op">
-    <div class="nav">
-        <img src="img/MENU.png" alt="">
-        <a href="#">商品分类</a>
+    <div class="navigation">
+        <form class="navigation"><br>
+            <a href="#">手机</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">电脑</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">旧书</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">服装</a>
+        </form>
     </div>
-    <div class="tag">
-        <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">闲置数码</a></li>
-            <li><a href="#">教材书籍</a></li>
-            <li><a href="#">运动装备</a></li>
-            <li><a href="#">鞋服配饰</a></li>
-            <li><a href="#">日用家具</a></li>
-        </ul>
-    </div>
-</nav>
-
-
+    <nav class="op">
+        <div class="nav">
+            <img src="img/tag.png"/>
+            <a href="product_list.html">&nbsp;商品分类</a>
+        </div>
+        <div class="tag">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#">闲置数码</a></li>
+                <li><a href="#">教材书籍</a></li>
+                <li><a href="#">运动装备</a></li>
+                <li><a href="#">鞋服配饰</a></li>
+                <li><a href="#">日用家居</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 <br>
 <br>
-
-
 <div class="tags">
     <div class="link">
-        <div class="item">
-            <h3><a href="#">闲置数码</a></h3>
-            <p>
-                <a href="">智能手机</a>
-                <a href="">单反相机</a>
-            </p>
-        </div>
-        <hr>
-        <div class="item">
-            <h3><a href="#">鞋服配饰</a></h3>
-            <p>
-                <a href="">连衣裙</a>
-                <a href="">皮肤衣</a>
-            </p>
-        </div>
-        <hr>
+        <div class="fenlei">
+            <div class="item">
+                <h2><a href="#">闲置数码</a></h2>
+                <p>
+                    <br>
+                    <a href="">智能手机</a>
+                    <a href="">单反相机</a>
+                </p>
+            </div>
 
-        <div class="item">
-            <h3><a href="#">教科书籍</a></h3>
-            <p>
-                <a href="">文学历史</a>
-                <a href="">科学教育</a>
-            </p>
+            <hr>
+
+            <div class="item">
+                <h2><a href="#">鞋服配饰</a></h2>
+                <p>
+                    <br>
+                    <a href="">连衣裙</a>
+                    <a href="">皮肤衣</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="item">
+                <h2><a href="#">教科书籍</a></h2>
+                <p>
+                    <br>
+                    <a href="">文学历史</a>
+                    <a href="">科学教育</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="item">
+                <h2><a href="#">运动装备</a></h2>
+                <p>
+                    <br>
+                    <a href="">运到鞋</a>
+                    <a href="">皮肤衣</a>
+                    <a href="">行车记录仪</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="item">
+                <h2><a href="#">日用家居</a></h2>
+                <p>
+                    <br>
+                    <a href="">家庭清洁</a>
+                    <a href="">保温杯</a>
+                </p>
+            </div>
+
+            <hr>
         </div>
-        <hr>
-        <div class="item">
-            <h3><a href="#">运动装备</a></h3>
-            <p>
-                <a href="">运到鞋</a>
-                <a href="">皮肤衣</a>
-                <a href="">行车记录仪</a>
-            </p>
-        </div>
-        <hr>
-        <div class="item">
-            <h3><a href="#">日用家居</a></h3>
-            <p>
-                <a href="">家庭清洁</a>
-                <a href="">保温杯</a>
-            </p>
-        </div>
-        <hr>
         <div class="index">
             <img src="img/index.png" alt="">
         </div>
-        <div class="user">
-            <form action="#" class="account">
-                <input type="text" name="username" placeholder="请输入用户名">
-                <input type="password" name="password" placeholder="请输入密码">
-                <input type="submit" id="login" value="登录">
+    </div>
 
-                <div class="button">
-                    <a href="注册.html">注册</a>
-                </div>
-            </form>
-        </div>
-        <section id="page">
+    <div class="user">
+        <form action="login.html" class="account">
+            <a href="usermanager.html">网站管理</a>
+            <input type="text" name="username" placeholder="请输入用户名">
+            <input type="password" name="password" placeholder="请输入密码">
+            <input type="submit" id="login" value="登录">
+            <div class="button">
+                <a href="register.html">注册</a>
+            </div>
+        </form>
+    </div>
+
+    <section id="page">
+        <div class="sy">
             <h3 class="navss"><img src="img/louceng.png" class="tit">闲置数码Idle digital</h3>
             <div class="picture">
                 <img src="img/nav1.png" alt="">
@@ -365,13 +409,12 @@
                     </div>
                     <div class="price">￥838.00</div>
                 </div>
-
-
             </div>
-        </section>
-
-    </div>
+        </div>
+    </section>
 </div>
+
+
 </body>
 </html>
 <script type="text/javascript">

@@ -8,9 +8,11 @@
     <script src="js/jquery-ui.min.js"></script>
     <style>
         article {
-            margin-left: 400px;
-            margin-top: -450px;
+            margin-left: 300px;
+            width: 80%;
+            height: 400px;
         }
+
 
         footer {
             width: 100%;
@@ -25,16 +27,40 @@
             margin: 10px 0px;
         }
 
+        textarea {
+            width: 500px;
+            height: 100px;
+            border-radius: 10px;
+            margin: 10px auto;
+        }
+
         footer .link div {
             float: right;
             margin-top: 20px;
             color: #fff;
         }
+
+        .fj {
+            border: 1px solid #000;
+            width: 80%;
+            height: 300px;
+        }
+
+        .hf {
+            border: 1px solid #000;
+            width: 80%;
+            height: 250px;
+            margin-top: 20px;
+        }
+
+        .navbar {
+            margin-top: 150px;
+        }
     </style>
 </head>
 <body>
 <header>
-    <div class="logo"><img src="img/logo.png"/></div>
+    <div class="logo"><a href="index.html"><img src="img/logo.png"/></a></div>
     <form class="searchform">
         <input type="text" name="search" id="search">
         <input type="submit" value="搜索" id="button">
@@ -47,47 +73,24 @@
             <a href="#">服装</a>
         </form>
     </div>
-    <nav class="op">
-        <div class="nav">
-            <img src="img/tag.png"/>
-            <a href="#">商品分类</a>
-        </div>
-        <div class="tag">
-            <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">闲置数码</a></li>
-                <li><a href="#">教材书籍</a></li>
-                <li><a href="#">运动装备</a></li>
-                <li><a href="#">鞋服配饰</a></li>
-                <li><a href="#">日用家居</a></li>
-            </ul>
-        </div>
-    </nav>
 </header>
-<aside>
-    <ul>
-        <li><a href="edit_pwd.html">修改密码</a></li>
-        <li><a href="edit_contact.html">修改联系方式</a></li>
-        <li><a href="my_orders.html">我的订单</a></li>
-        <li><a href="my_product.html">我的商品</a></li>
-        <li><a href="purchase_history.html">消费记录</a></li>
-    </ul>
-</aside>
+<nav class="op"></nav>
+<nav class="call_back">
+    <h1 align="center">留言回复</h1>
+</nav>
 <article>
-    <section>
+    <section class="fj">
         发件人：xxx<br>
         时间：2019-1-30 6:30<br>
         相关商品:iPad
-        <img src="img/ipad.jpg" width="80"/>
+        <img src="img/ipad.jpg" style="width: 80px; height: 90px;"/>
         <br>
         内容:<br>
-        <textarea rows="4">
-            请问这是什么型号的，什么时候买的？
-        </textarea>
+        <textarea rows="4">请问这是什么型号的，什么时候买的？</textarea>
     </section>
-    <section>
+    <section class="hf">
         回复：
-        <form action="#" method="post">
+        <form action="massage_list.html" method="post">
             <textarea name="msg" placeholder="请输入回复内容（最多输入150个字符）" required maxlength="150"></textarea>
             <br>
             <input type="submit" value="回复">
@@ -102,10 +105,8 @@
                 <li><a href="#">网站地图</a></li>
                 <li><a href="#">联系客服</a></li>
                 <li><a href="#">版权声明</a></li>
+                <a class="copyright">版权所有&copy;uuo00_n-team</a>
             </ul>
-        </div>
-        <div class="copyright">
-            <p>版权所有&copy;uuo00_n-team</p>
         </div>
     </div>
 </footer>

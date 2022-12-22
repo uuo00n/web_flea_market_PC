@@ -8,12 +8,14 @@
     <script src="js/jquery-ui.min.js"></script>
     <style>
         #detail {
+            margin: 1px auto;
             border: 2px solid red;
-            width: 55%;
+            width: 60%;
         }
 
-        img {
-            width: 100%;
+        #detail img {
+            width: 140px;
+            height: 140px;
         }
 
         video {
@@ -21,10 +23,6 @@
             height: 60px;
         }
 
-        article {
-            margin-left: 400px;
-            margin-top: -520px;
-        }
 
         footer {
             width: 100%;
@@ -47,74 +45,47 @@
     </style>
 </head>
 <body>
-<div class="logo"><img src="img/logo.png" alt=""></div>
-<form class="searchform">
-    <input type="text" name="search" id="search">
-    <input type="submit" value="搜索" id="button">
-</form>
-<div class="navigation">
-    <form class="navigation">
-        <br>
-        <a href="#">手机</a>&nbsp;&nbsp;|&nbsp;
-        <a href="#">电脑</a>&nbsp;&nbsp;|&nbsp;
-        <a href="#">旧书</a>&nbsp;&nbsp;|&nbsp;
-        <a href="#">服装</a>
+<header>
+    <div class="logo"><a href="index.html"><img src="img/logo.png"/></a></div>
+    <form class="searchform">
+        <input type="text" name="search" id="search">
+        <input type="submit" value="搜索" id="button">
     </form>
-</div>
-<nav class="op">
-    <div class="nav">
-        <img src="img/MENU.png" alt="">
-        <a href="#">商品分类</a>
+    <div class="navigation">
+        <form class="navigation"><br>
+            <a href="#">手机</a>&nbsp;&nbsp;|&nbsp;
+            <a href="#">电脑</a>&nbsp;&nbsp;|&nbsp;
+            <a href="#">旧书</a>&nbsp;&nbsp;|&nbsp;
+            <a href="#">服装</a>
+        </form>
     </div>
-    <div class="tag">
-        <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">闲置数码</a></li>
-            <li><a href="#">教材书籍</a></li>
-            <li><a href="#">运动装备</a></li>
-            <li><a href="#">鞋服配饰</a></li>
-            <li><a href="#">日用家具</a></li>
-        </ul>
-    </div>
-</nav>
-<aside>
-    <ul>
-        <li><a href="edit_pwd.html">修改密码</a></li>
-        <li><a href="edit_contact.html">修改联系方式</a></li>
-        <li><a href="my_orders.html">我的订单</a></li>
-        <li><a href="my_product.html">我的商品</a></li>
-        <li><a href="putchase_history.html">消费记录</a></li>
-    </ul>
-</aside>
-
-<article><br>
-    <section id="detail">
-        <h3>商品信息</h3>
-        <img src="img/01.jpg" width="500" height="400">
-        <video controls="controls" width="640" height="360">
-            <source src="movie/1.mp4"></source>
-        </video>
-        <video src="视频文件路径" controls="controls"></video>
-        <video controls="controls" width="320" height="240">
-            <source src="img/1.mp4" type="video/ogg"/>
-            <source src="img/1.mp4" type="video/mp4"/>
-        </video>
-
-        <h1>ipad 4GB 16GB Wi-Fi版</h1>
-        现价：200元<br>
-        编号：33313993<br>
-        <a href="#">立即购买</a>
-
-
-        <h4>产生介绍</h4>
-        <p>1.沿用风靡百年的经典全棉牛津面料，运用领先的液氮整理技术，
-            面料的抗折皱性能会更好。延续健康的设计理念，推出免烫，
-
-            2.正品，质量优良
-            3.九成新
-        </p>
-
-    </section>
+</header>
+<nav class="op"></nav>
+<article>
+    <form action="order.html">
+        <section id="detail">
+            <h3>商品信息</h3>
+            <img src="img/01.jpg" style="width: 100%; height: 30%;">
+            <img src="img/02.jpg" alt="">
+            <img src="img/03.jpg" alt="">
+            <img src="img/04.jpg" alt="">
+            <h1>ipad 4GB 16GB Wi-Fi版</h1>
+            现价：200元<br>
+            编号：33313993<br>
+            <input type="submit" value="立即购买">
+        </section>
+        <section id="detail">
+            <h4>产生介绍</h4>
+            <p>1.沿用风靡百年的经典全棉牛津面料，运用领先的液氮整理技术，
+                面料的抗折皱性能会更好。延续健康的设计理念，推出免烫，
+            </p>
+            <p>2.正品，质量优良</p>
+            <p>3.九成新</p>
+            <video controls="controls" style="width: 640px; height: 360px;">
+                <source src="img/1.mp4"></source>
+            </video>
+        </section>
+    </form>
 </article>
 <footer>
     <div class="navbar">
@@ -124,10 +95,8 @@
                 <li><a href="#">网站地图</a></li>
                 <li><a href="#">联系客服</a></li>
                 <li><a href="#">版权声明</a></li>
+                <a class="copyright">版权所有&copy;uuo00_n-team</a>
             </ul>
-        </div>
-        <div class="copyright">
-            <p>版权所有&copy;uuo00_n-team</p>
         </div>
     </div>
 </footer>

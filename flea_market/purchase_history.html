@@ -18,7 +18,7 @@
             position: relative;
             background-color: #cccccc;
             margin-top: 55px;
-            top: 190px;
+            top: -60px;
         }
 
         article input {
@@ -31,13 +31,7 @@
             color: #fff;
         }
 
-        .history_xg{
-            border: 3px solid #c40000;
-            background-color: #e6e6e6;
-            height: 560px;
-        }
-
-        .history_ys{
+        .history_ys {
             position: relative;
             border: 2px dashed #c40000;
             left: 15%;
@@ -47,7 +41,7 @@
 </head>
 <body>
 <header>
-    <div class="logo"><img src="img/logo.png"/></div>
+    <div class="logo"><a href="index.html"><img src="img/logo.png"/></a></div>
     <form class="searchform">
         <input type="text" name="search" id="search">
         <input type="submit" value="搜索" id="button">
@@ -60,71 +54,62 @@
             <a href="#">服装</a>
         </form>
     </div>
-    <!-- <nav class="op">
-        <div class="nav">
-            <img src="img/tag.png"/>
-            <a href="#">商品分类</a>
-        </div>
-        <div class="tag">
-            <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">闲置数码</a></li>
-                <li><a href="#">教材书籍</a></li>
-                <li><a href="#">运动装备</a></li>
-                <li><a href="#">鞋服配饰</a></li>
-                <li><a href="#">日用家居</a></li>
-            </ul>
-        </div>
-    </nav> -->
 </header>
-<div class="history_xg">
-<aside>
-    <ul>
-        <li><a href="edit_pwd.html">修改密码</a></li>
-        <li><a href="edit_contact.html">修改联系方式</a></li>
-        <li><a href="my_orders.html">我的订单</a></li>
-        <li><a href="my_product.html">我的商品</a></li>
-        <li><a href="purchase_history.html">消费记录</a></li>
-    </ul>
-</aside>
-<div class="history_ys">
-    消费记录
-</div>
-<article>
-    <div class="history">
-    <table border="1">
-        <tr>
-            <th>订单号</th>
-            <th>商品信息</th>
-            <th>实付款</th>
-            <th>时间</th>
-            <th>状态</th>
-            <th>操作</th>
-        </tr>
-        <tr>
-            <td>33276842401</td>
-            <td>
-                《C语言程序设计》
-            </td>
-            <td>$55.20</td>
-            <td>2019-3-30 00:07:22</td>
-            <td>交易成功</td>
-            <td>
-                <a href="">商品详情</a>
-                <a href="">删除</a>
-            </td>
-        </tr>
-        <tr align="right">
-            <td colspan="6">
-                <a href="#">第一页</a>
-                <a href="#">上一页</a>
-                <a href="#">下一页</a>
-                <a href="#">末页</a>
-            </td>
-        </tr>
-    </table>
-</div>
-</article>
+<nav class="op"></nav>
+<div class="splb">
+    <aside>
+        <ul>
+            <li><a href="edit_pwd.html">修改密码</a></li>
+            <li><a href="edit_contact.html">修改联系方式</a></li>
+            <li><a href="my_orders.html">我的订单</a></li>
+            <li><a href="my_product.html">我的商品</a></li>
+            <li><a href="purchase_history.html">消费记录</a></li>
+            <li><a href="add_product.html">发布商品</a></li>
+            <li><a href="edit_product.html">修改商品</a></li>
+            <li><a href="delete_product.html">删除商品</a></li>
+            <li><a href="massage_list.html">收件箱</a></li>
+            <li><a href="add_msg.html">发送留言</a></li>
+            <li><a href="order_list.html">查询订单</a></li>
+        </ul>
+    </aside>
+    <div class="history_ys">
+        消费记录
+    </div>
+    <article>
+        <div class="history">
+            <table border="1">
+                <tr>
+                    <th>订单号</th>
+                    <th>商品信息</th>
+                    <th>实付款</th>
+                    <th>时间</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>33276842401</td>
+                    <td>
+                        《C语言程序设计》
+                    </td>
+                    <td>$55.20</td>
+                    <td>2019-3-30 00:07:22</td>
+                    <td>交易成功</td>
+                    <td>
+                        <a href="">商品详情</a>
+                        <a href="">删除</a>
+                    </td>
+                </tr>
+                <tr align="right">
+                    <td colspan="6">
+                        <a href="#">第一页</a>
+                        <a href="#">上一页</a>
+                        <a href="#">下一页</a>
+                        <a href="#">末页</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </article>
 </div>
 <footer>
     <div class="navbar">

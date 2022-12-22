@@ -7,11 +7,6 @@
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <style>
-        article {
-            margin-left: 400px;
-            margin-top: -400px;
-        }
-
         footer {
             width: 100%;
             height: 50px;
@@ -30,11 +25,48 @@
             margin-top: 20px;
             color: #fff;
         }
+
+        .dd_hao {
+            margin: 0 auto;
+            border: 1px solid #000;
+            width: 90%;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+
+        .zf {
+            margin: 0 auto;
+            width: 90%;
+            height: 300px;
+        }
+
+        .dd_fk {
+            float: left;
+            border: 1px solid #000;
+            width: 48%;
+            height: 300px;
+        }
+
+        .dd_fk input {
+            width: 20px;
+            height: 20px;
+        }
+
+        .dd_zf {
+            float: right;
+            border: 1px solid #000;
+            width: 48%;
+            height: 300px;
+        }
+
+        .navbar {
+            margin-top: 150px;
+        }
     </style>
 </head>
 <body>
 <header>
-    <div class="logo"><img src="img/logo.png"/></div>
+    <div class="logo"><a href="index.html"><img src="img/logo.png"/></a></div>
     <form class="searchform">
         <input type="text" name="search" id="search">
         <input type="submit" value="搜索" id="button">
@@ -47,53 +79,51 @@
             <a href="#">服装</a>
         </form>
     </div>
-    <nav class="op">
-        <div class="nav">
-            <img src="img/tag.png"/>
-            <a href="#">商品分类</a>
-        </div>
-        <div class="tag">
-            <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">闲置数码</a></li>
-                <li><a href="#">教材书籍</a></li>
-                <li><a href="#">运动装备</a></li>
-                <li><a href="#">鞋服配饰</a></li>
-                <li><a href="#">日用家居</a></li>
-            </ul>
-        </div>
-    </nav>
 </header>
-<aside>
-    <ul>
-        <li><a href="edit_pwd.html">修改密码</a></li>
-        <li><a href="edit_contact.html">修改联系方式</a></li>
-        <li><a href="my_orders.html">我的订单</a></li>
-        <li><a href="my_product.html">我的商品</a></li>
-        <li><a href="purchase_history.html">消费记录</a></li>
-    </ul>
-</aside>
+<nav class="op"></nav>
+<nav id="pay">
+    <h1 align="center">支付</h1>
+</nav>
 <article>
     <section id="pay_order">
-        <h3>待支付订单</h3>
-        订单号：2017010101<br>
-        共1件商品 应付金额：￥1305（含运费5.00元）
+        <div class="dd_hao">
+            <h3>待支付订单</h3>
+            <p>订单号：2017010101</p>
+            <p>共1件商品 应付金额：￥1305（含运费5.00元）</p>
+        </div>
     </section>
-    <section id="pay_type">
-        <h3>支付方式：</h3>
-        <input type="radio" name="pay_type1"/>银行卡
-        <input type="radio" name="pay_type2"/>微信支付
-        <input type="radio" name="pay_type3"/>支付宝
-        <input type="radio" name="pay_type4"/>货到付款
-    </section>
-    <section id="pay_info">
-        <h3>支付</h3>
-        <form action="">
-            账号：<input type="text" name="account"/><br>
-            密码：<input type="password" name="pwd"/><br>
-            <input type="submit" value="确认支付"/>
-        </form>
-    </section>
+    <div class="zf">
+        <section id="pay_type">
+            <div class="dd_fk">
+                <h3>支付方式：</h3>
+                <input type="radio" name="pay_type"/>&nbsp;银行卡&nbsp;
+                <input type="radio" name="pay_type"/>&nbsp;微信支付&nbsp;
+                <input type="radio" name="pay_type"/>&nbsp;支付宝&nbsp;
+                <input type="radio" name="pay_type"/>&nbsp;货到付款
+            </div>
+        </section>
+        <section id="pay_info">
+            <div class="dd_zf">
+                <h3>支付账号</h3>
+                <form action="order_details.html">
+                    <table>
+                        <tr>
+                            <td>账号:</td>
+                            <td><input type="text" name="account"/></td>
+                        </tr>
+                        <tr>
+                            <td>密码:</td>
+                            <td><input type="password" name="pwd"/></td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="确认支付"/>
+                    <!-- 账号：<input type="text" name="account"/>
+                    密码：<input type="password" name="pwd"/>
+                    <input type="submit" value="确认支付"/> -->
+                </form>
+            </div>
+        </section>
+    </div>
 </article>
 <footer>
     <div class="navbar">
@@ -103,10 +133,8 @@
                 <li><a href="#">网站地图</a></li>
                 <li><a href="#">联系客服</a></li>
                 <li><a href="#">版权声明</a></li>
+                <a class="copyright">版权所有&copy;uuo00_n-team</a>
             </ul>
-        </div>
-        <div class="copyright">
-            <p>版权所有&copy;uuo00_n-team</p>
         </div>
     </div>
 </footer>
